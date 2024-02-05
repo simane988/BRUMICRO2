@@ -1,6 +1,13 @@
 import tkinter as tk
 from src.frames.MainMenu.RootChoiceMenu import RootChoiceMenu
 from src.frames.MainMenu.WBNegativeMenu import WBNegativeMenu
+from src.frames.MainMenu.WBPositiveMenu import WBPositiveMenu
+from src.frames.MainMenu.ColorNegativeMenu import ColorNegativeMenu
+from src.frames.MainMenu.ColorPositiveMenu import ColorPositiveMenu
+from src.frames.MainMenu.AudioNegativeMenu import AudioNegativeMenu
+from src.frames.MainMenu.AudioPositiveMenu import AudioPositiveMenu
+from src.frames.MainMenu.SeventhMenu import SeventhMenu
+from src.frames.MainMenu.SettingsMenu import SettingsMenu
 
 
 class MainMenu(tk.Frame):
@@ -15,7 +22,14 @@ class MainMenu(tk.Frame):
         self.rows_amount = 1
         self.submenus = [
             RootChoiceMenu,
-            WBNegativeMenu
+            WBNegativeMenu,
+            WBPositiveMenu,
+            ColorNegativeMenu,
+            ColorPositiveMenu,
+            AudioNegativeMenu,
+            AudioPositiveMenu,
+            SeventhMenu,
+            SettingsMenu,
         ]
 
         for r in range(self.rows_amount):
@@ -44,4 +58,4 @@ class MainMenu(tk.Frame):
         self.frames_history.remove(self.cur_frame)
         self.cur_frame.grid_forget()
         self.cur_frame = self.frames_history[-1]
-        self.cur_frame.activate()
+        self.cur_frame.reactivate()

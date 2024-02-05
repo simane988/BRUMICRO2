@@ -31,6 +31,12 @@ class VerticalMenuFrameABC(tk.Frame):
         self.focus_set()
         self.focus_update()
 
+    def reactivate(self):
+        self.update_layout()
+        self.bind_keys()
+        self.focus_set()
+        self.focus_update()
+
     def update_layout(self):
         if self.orientation in ['vertical', 'Vertical', 'vert', 'Vert']:
             for c in range(1):
