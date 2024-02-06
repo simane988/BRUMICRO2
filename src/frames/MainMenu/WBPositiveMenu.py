@@ -8,16 +8,18 @@ class WBPositiveMenu(VerticalMenuFrameABC):
         super().__init__(parent, controller)
 
         self.buttons = [
-            tk.Button(self, text='Чёрно-белый позитив', background=self.button_bg),
-            tk.Button(self, text='Чёрно-белый позитив', background=self.button_bg),
-            tk.Button(self, text='Чёрно-белый позитив', background=self.button_bg),
-            tk.Button(self, text='Чёрно-белый позитив', background=self.button_bg),
+            tk.Button(self, text='Ввод новой плёнки', background=self.button_bg),
+            tk.Button(self, text='Из архивов', background=self.button_bg),
+            tk.Button(self, text='Назначить эталон', background=self.button_bg),
+            tk.Button(self, text='Удаление файлов', background=self.button_bg),
+            tk.Button(self, text='Просмотр журнала', background=self.button_bg),
         ]
         self.buttons_exec = [
-            None,  # Чёрно-белый позитив
-            None,  # Чёрно-белый позитив
-            None,  # Чёрно-белый позитив
-            None,  # Чёрно-белый позитив
+            None,  # Ввод новой плёнки
+            None,  # Из архива
+            None,  # Назначить эталон
+            None,  # Удаление файлов
+            None,  # Просмотр журнала
         ]
 
         self.button_amount = len(self.buttons)

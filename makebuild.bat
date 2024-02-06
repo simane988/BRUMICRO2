@@ -3,4 +3,5 @@ pyinstaller --noconfirm --onedir --windowed ^
 --specpath="./build/spec" ^
 --workpath="./build/work" ^
 --name="BRUMICRO2" ^
-main.py
+app.py
+pause

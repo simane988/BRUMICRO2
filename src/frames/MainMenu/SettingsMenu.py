@@ -8,16 +8,18 @@ class SettingsMenu(VerticalMenuFrameABC):
         super().__init__(parent, controller)
 
         self.buttons = [
-            tk.Button(self, text='Настройки', background=self.button_bg),
-            tk.Button(self, text='Настройки', background=self.button_bg),
-            tk.Button(self, text='Настройки', background=self.button_bg),
-            tk.Button(self, text='Настройки', background=self.button_bg),
+            tk.Button(self, text='Названия архивов', background=self.button_bg),
+            tk.Button(self, text='Очистить архив', background=self.button_bg),
+            tk.Button(self, text='Установки', background=self.button_bg),
+            tk.Button(self, text='Доступы', background=self.button_bg),
+            tk.Button(self, text='Инструкции', background=self.button_bg),
         ]
         self.buttons_exec = [
-            None,  # Настройки
-            None,  # Настройки
-            None,  # Настройки
-            None,  # Настройки
+            None,  # Названия архивов
+            None,  # Очистить архив
+            None,  # Установки
+            None,  # Доступы
+            None,  # Инструкции
         ]
 
         self.button_amount = len(self.buttons)
