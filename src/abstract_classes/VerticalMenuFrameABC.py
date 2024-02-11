@@ -89,3 +89,6 @@ class VerticalMenuFrameABC(tk.Frame):
 
     def back(self, event):
         self.parent.go_back()
+
+    def new_manual_plot(self):
+        pass

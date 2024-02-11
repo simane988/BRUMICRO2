@@ -15,7 +15,7 @@ class WBNegativeMenu(VerticalMenuFrameABC):
             tk.Button(self, text='Просмотр журнала', background=self.button_bg),
         ]
         self.buttons_exec = [
-            None,  # Ввод новой плёнки
+            self.new_manual_plot,  # Ввод новой плёнки
             None,  # Из архива
             None,  # Назначить эталон
             None,  # Удаление файлов
@@ -23,3 +23,6 @@ class WBNegativeMenu(VerticalMenuFrameABC):
         ]
 
         self.button_amount = len(self.buttons)
+
+    def new_manual_plot(self):
+        print(self.parent)
